@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loops, arrays e objetos</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="exercicio1.js" defer> </script> -->
+        <!-- <script src="exercicio2.js" defer> </script> -->
+        <!-- <script src="exercicio3.js" defer> </script> -->
+        <!-- <script src="exercicio4.js" defer> </script> -->
+        <!-- <script src="exercicio5.js" defer> </script> -->
+        <script src="exercicioCRUD.js" defer> </script>
+
+        <!-- CSS para ocultar a lista de pessoas: -->
+        <style>
+            #lista-pessoas {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1>Loops, arrays e objetos</h1> -->
+        <h2>Cadastrar Pessoa</h2>
+        <form id="form-cadastro">
+            <div class="input-group">
+                <label for="id">ID (somente para atualizar cadastro):</label> 
+                <input type="text" id="id" name="id"><br><br>
+            </div>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br><br>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br><br>
+            
+            <button type="submit">Cadastrar/Atualizar</button>
+        </form>
+
+        <h2>Deletar Pessoa</h2>
+        <form id="form-deletar">
+            <div class="input-group">
+                <label for="id-deletar">ID:</label>
+                <input type="text" id="id-deletar" name="id-deletar" required>
+            </div>
+            <br>
+            <button type="submit">Deletar</button>
+        </form>
+
+        <h2>Listar Pessoas Cadastradas</h2>
+        <button id="listar-btn">Listar</button>
+        <ul id="lista-pessoas"></ul>
+    </body>
+</html>
