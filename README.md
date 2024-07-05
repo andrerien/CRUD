@@ -1,1 +1,1 @@
-Programa simples de manipulação do CRUD em JavaScript.
+Programa simples de manipulação de operações CRUD em JavaScript.
